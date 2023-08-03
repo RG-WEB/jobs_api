@@ -1,0 +1,127 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Jobs API",
+    "dateExported": "2023-08-01T12:32:18.787Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "c8c661ce-4f81-4231-8826-0c3fe134f681",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2023-08-01T08:04:21.509Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "886ddd19-5a99-45e5-a831-1b30e0e8e647",
+            "name": "Jobs",
+            "containerId": "",
+            "created": "2023-08-01T08:04:25.504Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b0d14cf4-7c73-48ba-ae7b-6d24da1b0339",
+            "colId": "887005f2-81ca-4ace-bc6d-e8fbe199b44a",
+            "containerId": "c8c661ce-4f81-4231-8826-0c3fe134f681",
+            "name": "Login",
+            "url": "{{URL}}/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-01T09:29:59.835Z",
+            "modified": "2023-08-01T10:08:52.585Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "89464417-5445-481a-bbb8-796d8b16dc7e",
+            "colId": "887005f2-81ca-4ace-bc6d-e8fbe199b44a",
+            "containerId": "c8c661ce-4f81-4231-8826-0c3fe134f681",
+            "name": "Register",
+            "url": "{{URL}}/auth/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-08-01T09:30:13.026Z",
+            "modified": "2023-08-01T12:20:05.085Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Jean\",\n  \"password\":\"secret\",\n  \"email\":\"jean.66785@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "568833f6-7bba-441b-9d0b-8625b59c18c0",
+            "colId": "887005f2-81ca-4ace-bc6d-e8fbe199b44a",
+            "containerId": "886ddd19-5a99-45e5-a831-1b30e0e8e647",
+            "name": "Get single job",
+            "url": "{{URL}}/jobs/id",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-08-01T09:30:23.844Z",
+            "modified": "2023-08-01T10:08:42.415Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a8b7c448-f1e3-4789-9d99-d1ecc737fec7",
+            "colId": "887005f2-81ca-4ace-bc6d-e8fbe199b44a",
+            "containerId": "886ddd19-5a99-45e5-a831-1b30e0e8e647",
+            "name": "Get all Jobs",
+            "url": "{{URL}}/jobs",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-08-01T09:30:32.919Z",
+            "modified": "2023-08-01T10:08:36.730Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "538d8b43-8924-44bd-8761-616572a35e7f",
+            "colId": "887005f2-81ca-4ace-bc6d-e8fbe199b44a",
+            "containerId": "886ddd19-5a99-45e5-a831-1b30e0e8e647",
+            "name": "Post job",
+            "url": "{{URL}}/jobs",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-08-01T09:30:44.991Z",
+            "modified": "2023-08-01T10:08:18.276Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0f3032b8-13f1-4d0d-b0b0-a3603d48a7bf",
+            "colId": "887005f2-81ca-4ace-bc6d-e8fbe199b44a",
+            "containerId": "886ddd19-5a99-45e5-a831-1b30e0e8e647",
+            "name": "Update job",
+            "url": "{{URL}}/jobs/id",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-08-01T09:30:53.869Z",
+            "modified": "2023-08-01T10:08:24.263Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b11a8f30-70da-4f1d-b110-de2fdfedb5fd",
+            "colId": "887005f2-81ca-4ace-bc6d-e8fbe199b44a",
+            "containerId": "886ddd19-5a99-45e5-a831-1b30e0e8e647",
+            "name": "Delete job",
+            "url": "{{URL}}/jobs/id",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-08-01T09:31:01.255Z",
+            "modified": "2023-08-01T10:08:28.869Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
